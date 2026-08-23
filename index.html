@@ -1,314 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Sandeep Kupsad, AI and digital transformation champion, GxP IT system manager, and responsible AI advocate.">
-  <meta name="keywords" content="Sandeep Kupsad, AI leadership, Responsible AI, GxP, Computerised System Validation, Pharma IT, Digital Transformation, System Manager">
-  <meta name="author" content="Sandeep Kupsad">
-  <meta property="og:title" content="Sandeep Kupsad | AI, Digital Transformation & GxP Technology">
-  <meta property="og:description" content="Building responsible AI solutions and resilient digital systems for regulated environments.">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#071a35">
-  <title>Sandeep Kupsad | AI & Digital Transformation Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Sandeep Kupsad, GxP IT Product Owner and Digital Transformation Lead." />
+  <meta name="theme-color" content="#f7fbff" />
+  <title>Sandeep Kupsad | GxP IT & Digital Transformation</title>
   <style>
     :root {
-      --navy: #071a35;
-      --blue: #1769e0;
-      --cyan: #19bfe8;
-      --teal: #00a99d;
-      --ink: #17233c;
-      --muted: #60708c;
-      --paper: #f6f9fd;
-      --white: #ffffff;
-      --line: #dce5f2;
-      --glass: rgba(255,255,255,.08);
-      --shadow: 0 18px 50px rgba(7,26,53,.12);
-      --radius: 22px;
-      --max: 1180px;
+      --ink:#17324d; --muted:#587087; --blue:#176b9c; --blue2:#2b8fc4;
+      --mint:#dff6ef; --sky:#e8f5fd; --cream:#fffaf0; --white:#ffffff;
+      --line:#cfe2ee; --shadow:0 18px 50px rgba(38,91,122,.12);
+      --radius:24px; --max:1180px;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--paper); line-height: 1.65; }
-    a { color: inherit; text-decoration: none; }
-    button, a { -webkit-tap-highlight-color: transparent; }
-    .container { width: min(calc(100% - 36px), var(--max)); margin: auto; }
-    .skip-link { position: fixed; left: 12px; top: -60px; background: var(--white); padding: 10px 14px; z-index: 999; border-radius: 8px; }
-    .skip-link:focus { top: 12px; }
-    nav { position: fixed; inset: 0 0 auto; z-index: 50; background: rgba(7,26,53,.82); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,.1); }
-    .nav-inner { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
-    .brand { display: flex; align-items: center; gap: 12px; color: white; font-weight: 800; letter-spacing: -.02em; }
-    .brand-mark { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: linear-gradient(135deg,var(--cyan),var(--blue)); box-shadow: 0 8px 24px rgba(25,191,232,.25); }
-    .nav-links { display:flex; gap: 20px; align-items:center; color:#dce8ff; font-size:.92rem; }
-    .nav-links a:hover, .nav-links a:focus { color: white; }
-    .menu-btn { display:none; border: 1px solid rgba(255,255,255,.25); color:white; background:transparent; border-radius:10px; padding:8px 10px; font-size:1rem; }
-    .hero { min-height: 880px; display:grid; align-items:center; color:white; overflow:hidden; position:relative; background:
-      radial-gradient(circle at 82% 16%, rgba(25,191,232,.26), transparent 30%),
-      radial-gradient(circle at 12% 82%, rgba(23,105,224,.26), transparent 34%),
-      linear-gradient(135deg,#041126 0%, #0b2753 55%, #06203e 100%); padding: 138px 0 90px; }
-    .hero::before { content:""; position:absolute; inset:0; opacity:.18; background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px); background-size: 46px 46px; mask-image: linear-gradient(to bottom,black,transparent); }
-    .hero-grid { position:relative; display:grid; grid-template-columns: 1.25fr .75fr; gap:70px; align-items:center; }
-    .eyebrow { display:inline-flex; align-items:center; gap:9px; background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.14); padding:8px 13px; border-radius:999px; color:#d8edff; font-size:.86rem; font-weight:700; }
-    .dot { width:8px; height:8px; border-radius:50%; background:#65f1c9; box-shadow: 0 0 0 6px rgba(101,241,201,.12); }
-    h1 { font-size: clamp(3rem, 7vw, 6.5rem); line-height:.94; letter-spacing:-.065em; margin:25px 0 24px; }
-    h1 span { display:block; background: linear-gradient(90deg,#fff 15%,#7cdbff 60%,#69efca); -webkit-background-clip:text; color:transparent; }
-    .hero-lead { font-size:clamp(1.08rem,2vw,1.35rem); color:#cbdbf4; max-width:720px; }
-    .hero-actions { display:flex; flex-wrap:wrap; gap:13px; margin-top:31px; }
-    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:13px 19px; border-radius:12px; font-weight:800; border:1px solid transparent; transition:.2s ease; }
-    .btn-primary { background:linear-gradient(135deg,var(--cyan),var(--blue)); color:white; box-shadow:0 12px 30px rgba(23,105,224,.32); }
-    .btn-secondary { border-color:rgba(255,255,255,.25); color:white; background:rgba(255,255,255,.06); }
-    .btn:hover { transform:translateY(-2px); }
-    .profile-card { position:relative; border:1px solid rgba(255,255,255,.16); border-radius:30px; padding:30px; background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.04)); box-shadow:0 35px 90px rgba(0,0,0,.25); backdrop-filter:blur(18px); }
-    .avatar { width:112px; height:112px; border-radius:28px; background:linear-gradient(135deg,#19bfe8,#1769e0 58%,#00a99d); display:grid; place-items:center; color:white; font-size:2.35rem; font-weight:900; box-shadow:0 20px 48px rgba(23,105,224,.4); }
-    .profile-card h2 { font-size:1.75rem; margin:22px 0 2px; }
-    .profile-card > p { margin:0; color:#c7d7ef; }
-    .profile-list { display:grid; gap:12px; margin-top:24px; }
-    .profile-item { display:flex; gap:12px; align-items:flex-start; padding:12px 0; border-top:1px solid rgba(255,255,255,.11); color:#dce8f9; }
-    .profile-item b { display:block; color:white; font-size:.83rem; text-transform:uppercase; letter-spacing:.08em; }
-    section { padding: 94px 0; }
-    .section-head { display:grid; grid-template-columns:.75fr 1.25fr; gap:45px; align-items:end; margin-bottom:42px; }
-    .kicker { color:var(--blue); text-transform:uppercase; letter-spacing:.15em; font-size:.78rem; font-weight:900; }
-    .section-head h2 { font-size:clamp(2.1rem,4vw,3.7rem); line-height:1.04; letter-spacing:-.045em; margin:8px 0 0; color:var(--navy); }
-    .section-head p { color:var(--muted); font-size:1.05rem; margin:0; }
-    .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-    .card { background:white; border:1px solid var(--line); border-radius:var(--radius); padding:27px; box-shadow:0 6px 30px rgba(7,26,53,.05); }
-    .card-icon { width:48px; height:48px; border-radius:14px; display:grid; place-items:center; color:white; background:linear-gradient(135deg,var(--blue),var(--cyan)); font-weight:900; margin-bottom:18px; }
-    .card h3 { margin:0 0 8px; color:var(--navy); font-size:1.15rem; }
-    .card p { margin:0; color:var(--muted); }
-    .about { background:white; }
-    .about-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:52px; align-items:start; }
-    .about-copy p { color:var(--muted); font-size:1.06rem; }
-    .principles { display:grid; gap:13px; }
-    .principle { padding:18px; border-radius:16px; background:var(--paper); border:1px solid var(--line); display:grid; grid-template-columns:auto 1fr; gap:15px; }
-    .principle strong { color:var(--navy); }
-    .principle span:first-child { width:34px; height:34px; border-radius:10px; display:grid; place-items:center; background:#e5f4ff; color:var(--blue); font-weight:900; }
-    .ai-lab { background:var(--navy); color:white; position:relative; overflow:hidden; }
-    .ai-lab::after { content:"AI"; position:absolute; right:-25px; bottom:-100px; font-weight:950; font-size:25rem; color:rgba(255,255,255,.025); }
-    .ai-lab .section-head h2 { color:white; }
-    .ai-lab .section-head p { color:#c5d5ec; }
-    .ai-lab .kicker { color:#66dfff; }
-    .ai-card { position:relative; z-index:1; background:var(--glass); border:1px solid rgba(255,255,255,.13); }
-    .ai-card h3 { color:white; }
-    .ai-card p { color:#c5d5ec; }
-    .tag-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
-    .tag { border-radius:999px; padding:6px 10px; background:rgba(25,191,232,.12); border:1px solid rgba(25,191,232,.25); color:#bcefff; font-size:.78rem; font-weight:700; }
-    .framework { margin-top:24px; display:grid; grid-template-columns:repeat(5,1fr); gap:12px; position:relative; z-index:1; }
-    .framework-step { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.12); border-radius:16px; padding:18px; }
-    .framework-step b { display:block; color:#70e8ff; margin-bottom:7px; font-size:.8rem; letter-spacing:.08em; }
-    .framework-step span { color:#e4edfb; font-weight:750; }
-    .timeline { position:relative; margin-top:30px; }
-    .timeline::before { content:""; position:absolute; top:7px; bottom:7px; left:117px; width:2px; background:var(--line); }
-    .timeline-item { display:grid; grid-template-columns:90px 1fr; gap:52px; padding:0 0 34px; position:relative; }
-    .timeline-item::before { content:""; position:absolute; left:109px; top:7px; width:15px; height:15px; border-radius:50%; background:var(--blue); box-shadow:0 0 0 6px #e7f0ff; }
-    .year { color:var(--blue); font-weight:900; font-size:.92rem; padding-top:3px; text-align:right; }
-    .rolebox { background:white; border:1px solid var(--line); border-radius:18px; padding:23px; }
-    .rolebox h3 { margin:0; color:var(--navy); }
-    .rolebox .company { color:var(--blue); font-weight:800; margin:3px 0 10px; }
-    .rolebox p { color:var(--muted); margin:0; }
-    .skills-wrap { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-    .skill-group h3 { margin-top:0; }
-    .skill-pills { display:flex; flex-wrap:wrap; gap:9px; }
-    .skill-pill { padding:8px 12px; border-radius:10px; border:1px solid var(--line); background:#f9fbff; color:#37506f; font-size:.88rem; font-weight:700; }
-    .education-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-    .edu-card { display:grid; grid-template-columns:70px 1fr; gap:17px; }
-    .edu-year { color:var(--blue); font-weight:900; }
-    .edu-card h3 { margin:0; }
-    .edu-card p { margin:5px 0 0; color:var(--muted); }
-    .contact { background:linear-gradient(135deg,#eaf3ff,#ecfffb); }
-    .contact-box { background:var(--navy); color:white; border-radius:30px; padding:clamp(28px,6vw,62px); display:grid; grid-template-columns:1.2fr .8fr; gap:35px; align-items:center; box-shadow:var(--shadow); }
-    .contact-box h2 { font-size:clamp(2.3rem,5vw,4.3rem); letter-spacing:-.05em; line-height:1; margin:0 0 18px; }
-    .contact-box p { color:#c2d3ed; max-width:680px; }
-    .contact-links { display:grid; gap:12px; }
-    .contact-links a { border:1px solid rgba(255,255,255,.16); border-radius:14px; padding:14px 16px; background:rgba(255,255,255,.06); color:#ecf4ff; font-weight:750; }
-    footer { padding:28px 0; color:#6c7a91; background:white; font-size:.9rem; }
-    .footer-inner { display:flex; align-items:center; justify-content:space-between; gap:20px; }
-    .reveal { opacity:0; transform:translateY(18px); transition:.7s ease; }
-    .reveal.visible { opacity:1; transform:none; }
-    @media (max-width: 900px) {
-      .hero-grid, .section-head, .about-grid, .contact-box { grid-template-columns:1fr; }
-      .hero { min-height:auto; }
-      .grid-3 { grid-template-columns:1fr 1fr; }
-      .framework { grid-template-columns:1fr 1fr; }
-      .skills-wrap, .education-grid { grid-template-columns:1fr; }
-      .nav-links { display:none; position:absolute; top:72px; left:0; right:0; padding:20px; flex-direction:column; align-items:flex-start; background:#071a35; }
-      .nav-links.open { display:flex; }
-      .menu-btn { display:block; }
-    }
-    @media (max-width: 620px) {
-      .grid-3, .framework { grid-template-columns:1fr; }
-      .timeline::before { left:7px; }
-      .timeline-item { grid-template-columns:1fr; gap:10px; padding-left:30px; }
-      .timeline-item::before { left:0; }
-      .year { text-align:left; }
-      h1 { font-size:3.2rem; }
-      .profile-card { padding:23px; }
-      .footer-inner { align-items:flex-start; flex-direction:column; }
-    }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } .reveal { opacity:1; transform:none; transition:none; } }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#f8fcff;line-height:1.65;overflow-x:hidden}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;background:
+      radial-gradient(circle at 10% 12%,rgba(92,193,224,.18),transparent 28%),
+      radial-gradient(circle at 88% 24%,rgba(112,214,174,.18),transparent 25%),
+      linear-gradient(180deg,#fbfeff,#f5fbff 45%,#fffdf8)}
+    a{color:inherit} .wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+    .skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;background:#fff;padding:10px;z-index:1000}
+    nav{position:sticky;top:0;z-index:50;background:rgba(248,252,255,.84);backdrop-filter:blur(15px);border-bottom:1px solid rgba(207,226,238,.75)}
+    .nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:850;letter-spacing:.2px;text-decoration:none}.brand span{color:var(--blue)}
+    .nav-links{display:flex;align-items:center;gap:24px}.nav-links a{text-decoration:none;font-weight:680;font-size:.92rem;color:#3f5c73;position:relative}
+    .nav-links a::after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:2px;background:var(--blue2);transition:.25s}.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+    .menu{display:none;border:0;background:var(--sky);border-radius:12px;padding:9px 12px;color:var(--ink);font-size:1.2rem}
+    .hero{min-height:calc(100vh - 70px);display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:65px;padding:74px 0}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;border:1px solid #b9dfec;background:rgba(255,255,255,.75);border-radius:999px;font-weight:760;font-size:.82rem;color:var(--blue)}
+    .dot{width:8px;height:8px;border-radius:50%;background:#35a878;box-shadow:0 0 0 6px rgba(53,168,120,.12)}
+    h1{font-size:clamp(3rem,7vw,6.3rem);line-height:.93;letter-spacing:-.065em;margin:24px 0 22px;max-width:820px}
+    h1 .accent{color:var(--blue)} .lead{font-size:clamp(1.06rem,2vw,1.27rem);color:var(--muted);max-width:730px}
+    .typed{font-weight:840;color:var(--blue);border-right:2px solid var(--blue);padding-right:4px}
+    .actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;border-radius:14px;padding:13px 18px;font-weight:800;border:1px solid transparent;transition:.25s;cursor:pointer}
+    .btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;box-shadow:0 11px 26px rgba(23,107,156,.22)}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(23,107,156,.28)}
+    .btn-secondary{background:#fff;border-color:var(--line);color:var(--blue)}.btn-secondary:hover{transform:translateY(-3px);border-color:var(--blue2)}
+    .hero-card{position:relative;background:rgba(255,255,255,.78);border:1px solid rgba(180,218,235,.8);border-radius:34px;padding:30px;box-shadow:var(--shadow);transform:rotate(1.2deg);animation:float 6s ease-in-out infinite}
+    .hero-card::before{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:var(--mint);right:-30px;top:-35px;z-index:-1}
+    .monogram{width:92px;height:92px;border-radius:28px;display:grid;place-items:center;background:linear-gradient(145deg,#dff6ff,#e5f7ef);color:var(--blue);font-weight:900;font-size:2rem;border:1px solid #c6e4ef}
+    .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}.mini{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}.mini strong{display:block;font-size:1.45rem;color:var(--blue)}.mini span{font-size:.82rem;color:var(--muted)}
+    .quote{margin:20px 0 0;padding:17px;background:var(--cream);border-radius:16px;font-weight:720;color:#496377}
+    section{padding:100px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:38px}.kicker{font-size:.8rem;text-transform:uppercase;letter-spacing:.18em;color:var(--blue);font-weight:900}.section-head h2{font-size:clamp(2.2rem,4.5vw,4rem);line-height:1;margin:8px 0 0;letter-spacing:-.045em}.section-head p{max-width:540px;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:var(--radius);padding:25px;box-shadow:0 8px 28px rgba(38,91,122,.07);transition:.3s}.card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:#9dcede}
+    .icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:var(--sky);font-size:1.35rem}.card h3{margin:17px 0 8px;font-size:1.25rem}.card p{color:var(--muted);margin:0}
+    .timeline{position:relative;margin-left:14px}.timeline::before{content:"";position:absolute;left:15px;top:5px;bottom:5px;width:2px;background:linear-gradient(var(--blue2),#a8ddcb)}
+    .job{position:relative;padding:0 0 42px 62px}.job:last-child{padding-bottom:0}.job::before{content:"";position:absolute;left:6px;top:7px;width:20px;height:20px;border-radius:50%;background:#fff;border:5px solid var(--blue2);box-shadow:0 0 0 5px #eaf7fb}.job-top{display:flex;justify-content:space-between;gap:20px;align-items:start}.job h3{margin:0;font-size:1.35rem}.job .company{color:var(--blue);font-weight:800}.job time{white-space:nowrap;background:var(--sky);border-radius:999px;padding:6px 11px;font-size:.82rem;font-weight:760}.job p,.job li{color:var(--muted)}
+    .filter{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:25px}.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;color:#49677d;font-weight:750;cursor:pointer}.chip.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+    .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.skill{background:#fff;border:1px solid var(--line);border-radius:17px;padding:17px;font-weight:760;transition:.25s}.skill:hover{transform:scale(1.035);background:var(--sky)}.skill small{display:block;color:var(--muted);font-weight:550;margin-top:3px}
+    .edu{display:grid;grid-template-columns:1fr 1fr;gap:22px}.list-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:27px}.list-item{padding:17px 0;border-bottom:1px dashed var(--line)}.list-item:last-child{border:0}.list-item strong{display:block}.list-item span{color:var(--muted);font-size:.92rem}
+    .contact{background:linear-gradient(135deg,#e7f7ff,#e7f8f1 55%,#fff8e9);border:1px solid #bfdfeb;border-radius:34px;padding:clamp(28px,6vw,65px);display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}.contact h2{font-size:clamp(2.3rem,5vw,4.3rem);line-height:1;letter-spacing:-.05em;margin:0 0 18px}.contact p{color:var(--muted)}.socials{display:grid;gap:12px}.social{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.82);border:1px solid var(--line);padding:15px 17px;border-radius:15px;text-decoration:none;font-weight:780;transition:.25s}.social:hover{transform:translateX(6px);background:#fff}
+    footer{padding:35px 0 45px;color:var(--muted);font-size:.9rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+    .to-top{position:fixed;right:20px;bottom:20px;width:45px;height:45px;border:0;border-radius:14px;background:var(--blue);color:#fff;box-shadow:var(--shadow);cursor:pointer;opacity:0;transform:translateY(15px);pointer-events:none;transition:.25s}.to-top.show{opacity:1;transform:none;pointer-events:auto}
+    @keyframes float{0%,100%{transform:rotate(1.2deg) translateY(0)}50%{transform:rotate(-.5deg) translateY(-11px)}}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.hero-card{max-width:590px}.cards{grid-template-columns:1fr 1fr}.skill-grid{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}.nav-links{position:absolute;left:18px;right:18px;top:76px;display:none;flex-direction:column;align-items:stretch;padding:18px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.nav-links.open{display:flex}.menu{display:block}}
+    @media (max-width:620px){section{padding:75px 0}.hero{padding:55px 0}.cards,.edu,.skill-grid{grid-template-columns:1fr}.section-head,.job-top{align-items:start;flex-direction:column}.job time{margin-top:7px}.mini-grid{grid-template-columns:1fr 1fr}.contact{padding:28px}.actions .btn{width:100%}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <nav aria-label="Primary navigation">
-    <div class="container nav-inner">
-      <a class="brand" href="#home" aria-label="Sandeep Kupsad home"><span class="brand-mark">SK</span><span>Sandeep Kupsad</span></a>
-      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#ai">AI Portfolio</a><a href="#journey">Journey</a><a href="#education">Education</a><a href="#contact">Connect</a>
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Primary navigation"><div class="wrap nav-inner">
+  <a class="brand" href="#home">Sandeep Kupsad<span>.</span></a>
+  <button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <div class="nav-links">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Expertise</a><a href="#education">Education</a><a href="#contact">Connect</a>
+  </div>
+</div></nav>
+<main id="main">
+  <header id="home" class="wrap hero">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> GxP IT leadership with a digital-first mindset</div>
+      <h1>Building trusted systems for a <span class="accent">smarter future.</span></h1>
+      <p class="lead">I am <strong>Sandeep Kupsad</strong>, a <span class="typed" aria-live="polite">GxP IT Product Owner</span>. I connect compliance, technology and people to improve regulated manufacturing and enterprise operations.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#experience">Explore my work <span>↗</span></a>
+        <a class="btn btn-secondary" href="Sandeep_Kupsad_CV_2026.pdf" download>Download CV <span>↓</span></a>
+        <a class="btn btn-secondary" href="https://www.instagram.com/sandeepkupsad/" target="_blank" rel="noopener">Instagram <span>↗</span></a>
       </div>
     </div>
-  </nav>
-
-  <header class="hero" id="home">
-    <div class="container hero-grid">
-      <div>
-        <div class="eyebrow"><span class="dot"></span> AI Champion · GxP Technology Leader · System Manager</div>
-        <h1>Building trusted AI.<span>Modernising regulated work.</span></h1>
-        <p class="hero-lead">I am Sandeep Kupsad, a technology and transformation professional focused on responsible artificial intelligence, regulated pharmaceutical IT, resilient system operations, and practical innovation that helps people work better.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#ai">Explore my AI capability</a>
-          <a class="btn btn-secondary" href="#journey">View professional journey</a>
-        </div>
+    <aside class="hero-card" aria-label="Professional snapshot">
+      <div class="monogram">SK</div>
+      <h2>Where governance meets innovation.</h2>
+      <p>Product ownership, Computerised System Validation, risk management, service delivery and responsible artificial intelligence adoption.</p>
+      <div class="mini-grid">
+        <div class="mini"><strong data-count="15">0</strong><span>Years of experience</span></div>
+        <div class="mini"><strong data-count="4">0</strong><span>Career organizations</span></div>
+        <div class="mini"><strong data-count="3">0</strong><span>Core focus areas</span></div>
+        <div class="mini"><strong>Global</strong><span>Cross-functional delivery</span></div>
       </div>
-      <aside class="profile-card" aria-label="Professional summary">
-        <div class="avatar" aria-hidden="true">SK</div>
-        <h2>Sandeep Kupsad</h2>
-        <p>Associate Lead System Manager I</p>
-        <div class="profile-list">
-          <div class="profile-item"><span>01</span><div><b>Core mission</b>Translate AI potential into responsible, usable business outcomes.</div></div>
-          <div class="profile-item"><span>02</span><div><b>Domain</b>Pharmaceutical IT, GxP systems, digital transformation and compliance.</div></div>
-          <div class="profile-item"><span>03</span><div><b>Leadership style</b>Collaborative, structured, evidence-led and people focused.</div></div>
-        </div>
-      </aside>
-    </div>
+      <p class="quote">“Technology creates value when people can trust it, use it and improve it.”</p>
+    </aside>
   </header>
 
-  <main id="main">
-    <section class="about" id="about">
-      <div class="container">
-        <div class="section-head reveal"><div><div class="kicker">About me</div><h2>Technology with purpose and accountability</h2></div><p>I bring together system lifecycle leadership, compliance discipline, AI experimentation and human-centred adoption. My focus is not AI for novelty. It is AI that is useful, governed, explainable and connected to real business needs.</p></div>
-        <div class="about-grid">
-          <div class="about-copy reveal">
-            <p>Across more than 17 years of professional experience, I have worked in financial operations, enterprise resource planning, pharmaceutical applications, computerised system validation, global system management and digital transformation.</p>
-            <p>Today, I am accountable for lifecycle governance and operational management of GxP-critical platforms. My work includes validated-state maintenance, risk and access controls, service delivery, supplier governance, recovery readiness, audit support and controlled digital improvement.</p>
-            <p>I am also developing my strategic technology leadership through an executive programme in Chief Technology Officer and AI Leadership, combining technical insight with business value, governance and organisational change.</p>
-          </div>
-          <div class="principles reveal">
-            <div class="principle"><span>1</span><div><strong>Human accountability</strong><br>AI supports decisions. Accountable people retain control, review and ownership.</div></div>
-            <div class="principle"><span>2</span><div><strong>Value before technology</strong><br>Start with the user problem, measurable outcome and process context.</div></div>
-            <div class="principle"><span>3</span><div><strong>Compliance by design</strong><br>Build traceability, risk controls and appropriate evidence into the solution.</div></div>
-            <div class="principle"><span>4</span><div><strong>Enable others</strong><br>Share practical methods, mentor teams and turn learning into reusable capability.</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="about"><div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">About</div><h2>Purpose-led technology leadership</h2></div><p>Focused on reliable GxP systems, transparent processes and practical innovation for regulated environments.</p></div>
+    <div class="cards">
+      <article class="card reveal"><div class="icon">◉</div><h3>Product Ownership</h3><p>Roadmap strategy, lifecycle decisions, prioritization, release coordination and stakeholder alignment.</p></article>
+      <article class="card reveal"><div class="icon">✦</div><h3>Digital Transformation</h3><p>Copilot and ChatGPT use cases, process transparency, documentation efficiency, artificial intelligence governance and workflow simplification.</p></article>
+      <article class="card reveal"><div class="icon">✓</div><h3>GxP Compliance</h3><p>Computerised System Validation and Assurance, Good Manufacturing Practice, data integrity, audit readiness and lifecycle governance.</p></article>
+    </div>
+  </div></section>
 
-    <section id="capabilities">
-      <div class="container">
-        <div class="section-head reveal"><div><div class="kicker">Core capabilities</div><h2>Where strategy meets execution</h2></div><p>I operate across technology, process, risk and people. This helps connect executive AI ambitions with the controls and delivery practices needed in regulated operations.</p></div>
-        <div class="grid-3">
-          <article class="card reveal"><div class="card-icon">AI</div><h3>Responsible AI & Agent Strategy</h3><p>Use-case discovery, agent concepts, prompt architecture, guardrails, human oversight, adoption planning and benefit framing.</p></article>
-          <article class="card reveal"><div class="card-icon">GX</div><h3>GxP & Computerised System Validation</h3><p>Validated-state oversight, lifecycle evidence, risk-based validation, data integrity, inspection readiness and controlled change.</p></article>
-          <article class="card reveal"><div class="card-icon">SM</div><h3>Global System Management</h3><p>Lifecycle strategy, operational governance, supplier coordination, service management, access, recovery and periodic review.</p></article>
-          <article class="card reveal"><div class="card-icon">DT</div><h3>Digital Transformation</h3><p>Translate manual work and fragmented information into simpler, traceable and scalable digital workflows.</p></article>
-          <article class="card reveal"><div class="card-icon">PM</div><h3>Project & Change Leadership</h3><p>Cross-functional planning, stakeholder alignment, agile delivery, risk follow-up and sustainable handover to operations.</p></article>
-          <article class="card reveal"><div class="card-icon">EN</div><h3>Mentoring & Enablement</h3><p>Support learners and teams through practical coaching, hackathon mentorship, demonstrations, feedback and reusable guidance.</p></article>
-        </div>
-      </div>
-    </section>
+  <section id="experience"><div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">Experience</div><h2>A journey across regulated IT</h2></div><p>More than 15 years spanning pharma manufacturing systems, enterprise resource planning and global operations.</p></div>
+    <div class="timeline">
+      <article class="job reveal"><div class="job-top"><div><h3>Senior System Manager</h3><div class="company">Novo Nordisk</div></div><time>2017 – Present</time></div><ul><li>Lifecycle governance and service delivery for Process Analytical Technology and CLC Next-Generation Sequencing platforms.</li><li>Partnership with product managers, architects, Quality Assurance, subject-matter experts and suppliers on priorities, risks, releases and audit readiness.</li><li>IT Infrastructure Library-based operations covering incidents, changes, access governance, service reviews and service-level performance.</li><li>Artificial intelligence and Copilot use cases for documentation, process transparency and workflow simplification.</li></ul></article>
+      <article class="job reveal"><div class="job-top"><div><h3>Senior Executive</h3><div class="company">Strides Shasun Ltd.</div></div><time>2012 – 2017</time></div><p>Managed validated applications supporting warehouse, packing and Quality Assurance batch release. Supported audits and qualification for document management, TrackWise and TraceLink, and coordinated PAS-X manufacturing execution system implementation.</p></article>
+      <article class="job reveal"><div class="job-top"><div><h3>Enterprise Resource Planning Engineer</h3><div class="company">Concord Group</div></div><time>2011 – 2012</time></div><p>Worked on enterprise resource planning implementation, finance module configuration, patches and user training.</p></article>
+      <article class="job reveal"><div class="job-top"><div><h3>Senior Analyst</h3><div class="company">Infosys Ltd.</div></div><time>2008 – 2011</time></div><p>Supported foreign-exchange trade reconciliation, settlements, reporting and shared-service operations.</p></article>
+    </div>
+  </div></section>
 
-    <section class="ai-lab" id="ai">
-      <div class="container">
-        <div class="section-head reveal"><div><div class="kicker">AI capability portfolio</div><h2>From promising idea to responsible adoption</h2></div><p>My AI work focuses on structured problem discovery, reliable knowledge use, transparent outputs and meaningful human review, especially where quality, compliance or business risk matters.</p></div>
-        <div class="grid-3">
-          <article class="card ai-card reveal"><h3>Knowledge & Research Agents</h3><p>Concepts for finding, consolidating and structuring information from approved enterprise sources, with citations and clear limits.</p><div class="tag-row"><span class="tag">Retrieval</span><span class="tag">Knowledge synthesis</span><span class="tag">Traceability</span></div></article>
-          <article class="card ai-card reveal"><h3>Compliance Assistance</h3><p>AI-supported document assessment, lifecycle deliverable mapping, design-review support, gap identification and action tracking under human oversight.</p><div class="tag-row"><span class="tag">GxP</span><span class="tag">Risk-based approach</span><span class="tag">Human review</span></div></article>
-          <article class="card ai-card reveal"><h3>Productivity & Decision Support</h3><p>Meeting synthesis, action extraction, project status analysis, dashboards, structured prompts and reusable workflows for knowledge workers.</p><div class="tag-row"><span class="tag">Microsoft 365</span><span class="tag">Automation</span><span class="tag">Insights</span></div></article>
-          <article class="card ai-card reveal"><h3>AI Adoption & Learning</h3><p>Practical guidance that helps users understand when to use AI, select the right tool, write better prompts and validate outcomes.</p><div class="tag-row"><span class="tag">Training</span><span class="tag">Prompt engineering</span><span class="tag">Change adoption</span></div></article>
-          <article class="card ai-card reveal"><h3>Agent Experience Design</h3><p>Define user journeys, task boundaries, escalation paths, expected evidence and feedback loops before building an agent.</p><div class="tag-row"><span class="tag">Copilot Studio</span><span class="tag">UX</span><span class="tag">Guardrails</span></div></article>
-          <article class="card ai-card reveal"><h3>AI Governance Translation</h3><p>Turn broad responsible-AI principles into practical checkpoints for ownership, data, validation, monitoring and operational control.</p><div class="tag-row"><span class="tag">Governance</span><span class="tag">Accountability</span><span class="tag">Monitoring</span></div></article>
-        </div>
-        <div class="framework reveal" aria-label="AI delivery framework">
-          <div class="framework-step"><b>01 · DISCOVER</b><span>Define user and business need</span></div>
-          <div class="framework-step"><b>02 · ASSESS</b><span>Evaluate data, risk and feasibility</span></div>
-          <div class="framework-step"><b>03 · DESIGN</b><span>Set workflow and guardrails</span></div>
-          <div class="framework-step"><b>04 · VALIDATE</b><span>Test accuracy and controls</span></div>
-          <div class="framework-step"><b>05 · IMPROVE</b><span>Monitor value and learn</span></div>
-        </div>
-      </div>
-    </section>
+  <section id="skills"><div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">Expertise</div><h2>Capabilities that connect</h2></div><p>Select a category to explore the systems, methods and leadership strengths in my portfolio.</p></div>
+    <div class="filter reveal" role="group" aria-label="Filter expertise">
+      <button class="chip active" data-filter="all">All</button><button class="chip" data-filter="quality">GxP & Quality</button><button class="chip" data-filter="delivery">IT Service & Delivery</button><button class="chip" data-filter="platform">Platforms</button><button class="chip" data-filter="leadership">Leadership</button>
+    </div>
+    <div class="skill-grid reveal">
+      <div class="skill" data-cat="quality">GMP<small>Good Manufacturing Practice</small></div><div class="skill" data-cat="quality">21 CFR Part 11<small>Electronic records and signatures</small></div><div class="skill" data-cat="quality">CSV / CSA<small>Validation and assurance</small></div><div class="skill" data-cat="quality">Data Integrity<small>Controls and audit readiness</small></div>
+      <div class="skill" data-cat="delivery">ITIL 4<small>Service management</small></div><div class="skill" data-cat="delivery">ServiceNow<small>Incident, problem and change</small></div><div class="skill" data-cat="delivery">SLA / KPI<small>Service performance governance</small></div><div class="skill" data-cat="delivery">Supplier Governance<small>Performance and collaboration</small></div>
+      <div class="skill" data-cat="platform">synTQ<small>Process Analytical Technology</small></div><div class="skill" data-cat="platform">Veeva Vault<small>Quality content platform</small></div><div class="skill" data-cat="platform">PAS-X MES<small>Manufacturing execution</small></div><div class="skill" data-cat="platform">SAP Finance<small>Enterprise applications</small></div>
+      <div class="skill" data-cat="leadership">Stakeholder Influence<small>Alignment across functions</small></div><div class="skill" data-cat="leadership">Mentoring<small>Enabling people to grow</small></div><div class="skill" data-cat="leadership">Prioritization<small>Value and risk-based decisions</small></div><div class="skill" data-cat="leadership">Cross-cultural Delivery<small>Global collaboration</small></div>
+    </div>
+  </div></section>
 
-    <section id="journey">
-      <div class="container">
-        <div class="section-head reveal"><div><div class="kicker">Professional journey</div><h2>Experience across systems, compliance and transformation</h2></div><p>A career progression from operations and enterprise applications into regulated technology leadership, global platform management and responsible AI enablement.</p></div>
-        <div class="timeline">
-          <div class="timeline-item reveal"><div class="year">2024–Present</div><article class="rolebox"><h3>Associate Lead System Manager I</h3><div class="company">Novo Nordisk Service Centre India</div><p>Lifecycle and operational governance for Global PAT/synTQ and NGS CLC Genomics, with responsibility for validated state, risk, access, suppliers, recovery and inspection readiness.</p></article></div>
-          <div class="timeline-item reveal"><div class="year">2024–2026</div><article class="rolebox"><h3>Senior System Manager I</h3><div class="company">Novo Nordisk Service Centre India</div><p>Led lifecycle strategy, validation and release coordination, global rollout and handover, IT compliance, supplier management and audit support for a global process analytical technology platform.</p></article></div>
-          <div class="timeline-item reveal"><div class="year">2019–2024</div><article class="rolebox"><h3>System Manager II</h3><div class="company">Novo Nordisk Service Centre India</div><p>Managed global CCTV and manufacturing-related systems, including lifecycle activities, changes, incidents, compliance deliverables, access and periodic reviews; supported agile delivery and mentoring.</p></article></div>
-          <div class="timeline-item reveal"><div class="year">2017–2019</div><article class="rolebox"><h3>Advanced Business Analyst I</h3><div class="company">Novo Nordisk Service Centre India</div><p>Authored and reviewed periodic and compliance reports for validated GxP systems, supporting computerised system validation, good documentation practice and inspection readiness.</p></article></div>
-          <div class="timeline-item reveal"><div class="year">2012–2017</div><article class="rolebox"><h3>Senior Executive</h3><div class="company">Strides Shasun Ltd.</div><p>Managed GxP applications for warehouse, packing, quality, traceability and plant processes; supported audits, qualification activities and manufacturing execution system projects.</p></article></div>
-          <div class="timeline-item reveal"><div class="year">2011–2012</div><article class="rolebox"><h3>ERP Engineer</h3><div class="company">Concord Group</div><p>Implemented and supported a real-estate ERP application across finance, tax, sales, engineering and procurement, including configuration, issue resolution and user training.</p></article></div>
-          <div class="timeline-item reveal"><div class="year">2008–2011</div><article class="rolebox"><h3>Senior Analyst</h3><div class="company">Infosys Limited</div><p>Analysed and reconciled foreign-exchange trades, supported settlement operations and delivered quality reporting for financial-services operations.</p></article></div>
-        </div>
-      </div>
-    </section>
+  <section id="education"><div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">Learning</div><h2>Education and certifications</h2></div><p>Continuous learning across technology, leadership, delivery and enterprise systems.</p></div>
+    <div class="edu">
+      <div class="list-card reveal"><h3>Education</h3><div class="list-item"><strong>Chief Technology and AI Officer Programme</strong><span>IIIT Bengaluru / IIM Udaipur · 2026</span></div><div class="list-item"><strong>Master of Business Administration</strong><span>IIPM, Bangalore · 2006 – 2008</span></div><div class="list-item"><strong>Bachelor of Engineering</strong><span>Industrial Engineering and Management, DSCE · 2002 – 2006</span></div></div>
+      <div class="list-card reveal"><h3>Certifications</h3><div class="list-item"><strong>Advanced ITIL 4</strong><span>2025</span></div><div class="list-item"><strong>Agile Project Management</strong><span>2023</span></div><div class="list-item"><strong>SAFe Agile Scrum Master</strong><span>2021</span></div><div class="list-item"><strong>SAP Financial Accounting</strong><span>2012</span></div></div>
+    </div>
+  </div></section>
 
-    <section class="about" id="skills">
-      <div class="container">
-        <div class="section-head reveal"><div><div class="kicker">Skills & methods</div><h2>A multidisciplinary toolkit</h2></div><p>Capabilities developed through hands-on delivery, system ownership, formal learning, collaboration and continuous experimentation.</p></div>
-        <div class="skills-wrap">
-          <article class="card skill-group reveal"><h3>AI & Digital</h3><div class="skill-pills"><span class="skill-pill">AI use-case discovery</span><span class="skill-pill">Prompt engineering</span><span class="skill-pill">AI agents</span><span class="skill-pill">Responsible AI</span><span class="skill-pill">Copilot Studio</span><span class="skill-pill">Microsoft 365 Copilot</span><span class="skill-pill">Power Automate</span><span class="skill-pill">Power BI</span><span class="skill-pill">Knowledge synthesis</span></div></article>
-          <article class="card skill-group reveal"><h3>Regulated Technology</h3><div class="skill-pills"><span class="skill-pill">GxP</span><span class="skill-pill">Computerised System Validation</span><span class="skill-pill">GAMP 5</span><span class="skill-pill">Data integrity</span><span class="skill-pill">Audit readiness</span><span class="skill-pill">Risk management</span><span class="skill-pill">Validation lifecycle</span><span class="skill-pill">Good Documentation Practice</span></div></article>
-          <article class="card skill-group reveal"><h3>Service & System Management</h3><div class="skill-pills"><span class="skill-pill">ITIL 4</span><span class="skill-pill">Lifecycle governance</span><span class="skill-pill">Supplier management</span><span class="skill-pill">Service delivery</span><span class="skill-pill">Change management</span><span class="skill-pill">Incident management</span><span class="skill-pill">Access governance</span><span class="skill-pill">Recovery readiness</span></div></article>
-          <article class="card skill-group reveal"><h3>Leadership</h3><div class="skill-pills"><span class="skill-pill">Stakeholder engagement</span><span class="skill-pill">Cross-functional leadership</span><span class="skill-pill">Mentoring</span><span class="skill-pill">Agile project management</span><span class="skill-pill">SAFe Scrum Master</span><span class="skill-pill">Executive communication</span><span class="skill-pill">Continuous learning</span></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="education">
-      <div class="container">
-        <div class="section-head reveal"><div><div class="kicker">Education & development</div><h2>Learning across engineering, business and AI leadership</h2></div><p>Formal education and continuing development support my ability to connect technology architecture, operational reality, business value and organisational leadership.</p></div>
-        <div class="education-grid">
-          <article class="card edu-card reveal"><div class="edu-year">2026</div><div><h3>Chief Technology Officer & AI Leadership Programme</h3><p>Executive education in progress · IIIT Bangalore and IIM Udaipur</p></div></article>
-          <article class="card edu-card reveal"><div class="edu-year">2008</div><div><h3>Master's in Business Administration</h3><p>IIPM, Bangalore</p></div></article>
-          <article class="card edu-card reveal"><div class="edu-year">2006</div><div><h3>B.E. Industrial Engineering & Management</h3><p>Dayananda Sagar College of Engineering · Visvesvaraya Technological University</p></div></article>
-          <article class="card edu-card reveal"><div class="edu-year">Selected</div><div><h3>Professional Development</h3><p>Advanced ITIL 4 · Managing Up, Down and Across · Agile Project Management · SAFe Agile Scrum Master · ITIL · SAP Financial Accounting</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="contact-box reveal">
-          <div><h2>Let’s build technology people can trust.</h2><p>I welcome conversations about responsible AI, AI agents, regulated digital transformation, GxP system management, innovation mentoring and practical adoption.</p><p><small>Replace the placeholder links before publishing. Do not publish your private phone number or personal email unless you want them publicly indexed.</small></p></div>
-          <div class="contact-links">
-            <a href="https://www.linkedin.com/in/sandeep-kupsad-38277b134" target="_blank" rel="noopener">LinkedIn · Add your profile URL</a>
-            <a href="mailto:Sandeep.Kupsad@gmail.com">Email · Add your preferred public email</a>
-            <a href="Sandeep.Kupsad.pdf" target="_blank" rel="noopener">Résumé · Add a public PDF link</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer><div class="container footer-inner"><span>© <span id="year"></span> Sandeep Kupsad. Built as a personal professional portfolio.</span><span>Responsible AI · GxP Technology · Digital Transformation</span></div></footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const menuBtn = document.getElementById('menuBtn');
-    const navLinks = document.getElementById('navLinks');
-    menuBtn.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', open);
-    });
-    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    }));
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
-    }), { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
-</body>
-</html>
+  <section id="contact"><div class="wrap"><div class="contact reveal">
+    <div><div class="kicker">Connect</div><h2>Let us build something meaningful.</h2><p>Open to conversations about GxP technology, digital transformation, product ownership, responsible artificial intelligence and professional collaboration.</p><div class="actions"><a class="btn btn-primary" href="mailto:Sandeep.Kupsad@gmail.com">Send an email</a></div></div>
+    <div class="socials"><a class="social" href="http://www.linkedin.com/in/sandeep-kupsad-38277b134" target="_blank" rel="noopener"><span>LinkedIn</span><span>↗</span></a><a class="social" href="https://www.instagram.com/sandeepkupsad/" target="_blank" rel="noopener"><span>Instagram · @sandeepkupsad</span><span>↗</span></a><a class="social" href="Sandeep_Kupsad_CV_2026.pdf" download><span>Download résumé</span><span>↓</span></a></div>
+  </div></div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> Sandeep Kupsad. Built with clarity and care.</span><span>GxP IT · Digital Transformation · Product Leadership</span></div></footer>
+<button class="to-top" aria-label="Back to top">↑</button>
+<script>
+  const menu=document.querySelector('.menu'), links=document.querySelector('.nav-links');
+  menu.addEventListener('click',()=>{links.classList.toggle('open');menu.setAttribute('aria-expanded',links.classList.contains('open'))});
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+  const reveal=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');reveal.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
+  const words=['GxP IT Product Owner','Digital Transformation Lead','Pharma Systems Leader','AI-enabled Process Innovator']; let wi=0,ci=0,deleting=false; const typed=document.querySelector('.typed');
+  function type(){const w=words[wi];typed.textContent=w.slice(0,ci); if(!deleting&&ci<w.length)ci++;else if(deleting&&ci>0)ci--;else{deleting=!deleting;if(!deleting)wi=(wi+1)%words.length}setTimeout(type,deleting?35:(ci===w.length?1400:65))} type();
+  const counters=document.querySelectorAll('[data-count]');const countObs=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;let n=0,end=+e.target.dataset.count;const t=setInterval(()=>{n++;e.target.textContent=n+(end===15?'+':'');if(n>=end)clearInterval(t)},70);countObs.unobserve(e.target)}));counters.forEach(c=>countObs.observe(c));
+  document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active'));btn.classList.add('active');let f=btn.dataset.filter;document.querySelectorAll('.skill').forEach(s=>{const show=f==='all'||s.dataset.cat===f;s.style.display=show?'block':'none'})}));
+  const sections=[...document.querySelectorAll('main section')],navAs=[...document.querySelectorAll('.nav-links a')],topBtn=document.querySelector('.to-top');
+  addEventListener('scroll',()=>{let y=scrollY+160;sections.forEach(s=>{if(y>=s.offsetTop&&y<s.offsetTop+s.offsetHeight)navAs.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+s.id))});topBtn.classList.toggle('show',scrollY>650)});
+  topBtn.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
